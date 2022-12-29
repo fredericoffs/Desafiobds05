@@ -11,3 +11,5 @@ INSERT INTO tb_review (text, user_id) VALUES ('Good Movie', 2);
 
 INSERT INTO tb_genre (name) VALUES ('Action');
 INSERT INTO tb_genre (name) VALUES ('Thriller');
+
+INSERT INTO tb_movie (title, sub_title, year, img_Url, synopsis, genre_id) VALUES ('O Enfermeiro da Noite','',2022,'https://www.oficinadanet.com.br/imagens/post/23817/o-enfermeiro-da-noite.jpg','Uma história comovente e assustadora de uma pessoa com uma frieza questionável', 2)
