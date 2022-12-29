@@ -7,4 +7,7 @@ INSERT INTO tb_role (authority) VALUES ('ROLE_MEMBER');
 INSERT INTO tb_user_role (user_id, role_id) VALUES (1, 1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (2, 2);
 
-INSERT INTO tb_review (text, user_id) VALUES ('Filme bão', 2);
+INSERT INTO tb_review (text, user_id) VALUES ('Good Movie', 2);
+
+INSERT INTO tb_genre (name) VALUES ('Action');
+INSERT INTO tb_genre (name) VALUES ('Thriller');
