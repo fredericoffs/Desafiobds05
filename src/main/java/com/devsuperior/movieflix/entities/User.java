@@ -84,6 +84,9 @@ public class User implements UserDetails, Serializable {
     return roles;
   }
 
+  public List<Review> getReviews() {
+    return reviews;
+  }
 
   @Override
   public Collection<? extends GrantedAuthority> getAuthorities() {
