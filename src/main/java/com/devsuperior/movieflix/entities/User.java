@@ -5,6 +5,7 @@ import static javax.persistence.FetchType.EAGER;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -37,7 +38,7 @@ public class User implements UserDetails, Serializable {
   @JoinTable(name = "tb_user_role",
       joinColumns = @JoinColumn(name = "user_id"),
       inverseJoinColumns = @JoinColumn(name = "role_id"))
-  private Set<Role> roles;
+  private Set<Role> roles = new HashSet<>();
 
   @OneToMany(mappedBy = "user")
   private List<Review> reviews = new ArrayList<>();
